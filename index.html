@@ -4,16 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Janala</title>
-</head>
-<body>
-    <header>
 
+    <!-- Daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        /* font style */
+
+        .poppins{
+         font-family: "Poppins", sans-serif;
+         }
+
+    </style>
+
+</head>
+
+ 
+<body>
+    <!-- Nav Style -->
+    <header>
+<nav class="flex justify-between  bg-[#C6BDBD30] px-12 py-6 border-b-2  border-[#C6BDBD30]">
+    <div class="flex font-semibold poppins text-xl">
+        English <img class="w-10 h-10" src="./assets/logo.png">জানালা
+    </div>
+   <div class="flex gap-4">
+    <div>
+        <button class="btn btn-outline btn-primary">
+            <img src="./assets/fa-circle-question.png">  
+            FAQ</button>
+    </div>
+    <div>
+        <button class="btn btn-outline btn-primary"> 
+            <img src="./assets/fa-book-open.png"> Learn</button>
+    </div>
+    <div>
+        <button class="btn btn-outline btn-primary">
+            <img src="./assets/fa-arrow-right-from-bracket.png"> Logout </button>
+    </div>
+   </div>
+</nav>
     </header>
-    <main>
+
+
+
+    <main class="w-11/12 mx-auto">
+<!-- Banner Section -->
+        <div class="flex justify-between">
+            <div class="flex flex-col  my-auto gap-5">
+                <h1 class="text-[50px] font-bold poppins">
+                    <span class="text-sky-500">English</span> is Easy!!
+                </h1>
+                <p>
+                    আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br>
+                    আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ
+                </p>
+    
+                <!-- Login section -->
+                <div class="flex flex-col py-3 gap-3">
+                
+                    <input type="text"id="input-num" class="input  " placeholder="Enter Your Name" required />
+                
+                    <input type="password" id="input-digit"class="input  " placeholder="Enter Login Code" required/>
+                   
+                    <button id="login-btn" class="btn bg-[#422AD5] text-white p-2 w-[114.83px]">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+            
+            <!--  Banner Style  -->
+            <div>
+    <img class="lg:w-[734px] " src="./assets/hero-student.png">
+            </div>
+       
+        </div>
+
 
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
