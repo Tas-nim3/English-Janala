@@ -1,3 +1,27 @@
+function showAlert() {
+  Swal.fire({
+          title: "Login successful!",
+          icon: "success",
+          draggable: true
+        });
+}
+   function showAlert2() {
+     Swal.fire({
+      icon: "error",
+      title: "Invalid Pin!",
+      text: "Please try again.",
+     
+    });
+}
+function showAlert3() {
+Swal.fire({
+        icon: "error",
+        title: "Enter Name!",
+        text: "Please enter a name",
+      });
+    } 
+
+
 document.getElementById('login-btn').addEventListener('click',function(event){
     event.preventDefault();
     
@@ -6,12 +30,13 @@ document.getElementById('login-btn').addEventListener('click',function(event){
     const pin = parseInt(accountDigit);
 
      if(!accountName){
-       alert("Please enter a name");
+      
+      showAlert3()
        return;
      }
     
        if(pin===123456){
-          alert("Login successful");
+        showAlert()
 
           document.getElementById("banner").style.display='none';
           
@@ -24,7 +49,9 @@ document.getElementById('login-btn').addEventListener('click',function(event){
        
        }
        else{
-           alert('Invalid Pin')
+
+        showAlert2();
+         
        }
     
    
