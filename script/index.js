@@ -1,3 +1,15 @@
+const showLoader=()=>{
+    document.getElementById("loader").classList.remove("hidden");
+    document.getElementById("words-container").classList.add("hidden");
+}
+const hideLoader=()=>{
+    document.getElementById("loader").classList.add("hidden");
+    document.getElementById("words-container").classList.remove("hidden");
+}
+
+
+
+
 document.getElementById('faq-btn').addEventListener('click',function(){
     document.getElementById('faq').scrollIntoView({behavior: 'smooth'});
 })
@@ -24,7 +36,6 @@ function displayLessonButtons(lessons) {
     const buttonContainer = document.getElementById("button-container");
     
     for (let lesson of lessons) {
-        console.log(lesson);
 
         const buttonWrapper = document.createElement("div");
 
@@ -38,5 +49,11 @@ function displayLessonButtons(lessons) {
         buttonContainer.append(buttonWrapper);
     }
 }
+
+
+
+
+
+
 
 fetchLessonButtons();

@@ -24,6 +24,11 @@
          font-family: "Poppins", sans-serif;
          }
 
+         .active{
+            background-color:#422AD5 ;
+            color:white
+         }
+
     </style>
 
 </head>
@@ -112,8 +117,11 @@
         </div>
 
         <!-- Button Details -->
- 
-        <section id="words-container" class="bg-[#C6BDBD20] rounded-xl  p-5 grid grid-cols-3 gap-3">
+        <section id="loader" class="text-center py-10 hidden">
+            <span class="loading loading-dots loading-xl"></span>
+         </section>
+         
+        <section id="words-container" class="bg-[#C6BDBD20] rounded-xl  p-5 grid grid-cols-3 gap-3 auto-rows-fr">
 
 
    <!-- no content -->
@@ -130,8 +138,22 @@
 </section>
     
 
-
-
+<dialog id="card_details" class="modal">
+    <div class="modal-box">
+      <div id="details-container">
+  
+      </div>
+     
+      <div class="">
+        <form method="dialog">
+         
+       
+          <button class="btn bg-[#422AD5] rounded-lg text-white my-4 px-5  poppins font-normal">Complete Learning</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+  
 <!-- Qus Ans Section -->
 
  <section id="faq" >
@@ -187,6 +209,8 @@
   </div>
 
  </section>
+
+ 
 
     </main>
 
