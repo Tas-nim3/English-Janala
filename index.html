@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <style>
         /* font style */
 
@@ -28,7 +31,9 @@
  
 <body>
     <!-- Nav Style -->
-<header  id="navbar" class="hidden">
+<header  id="navbar" >
+    <!-- class="hidden" -->
+
 <nav class="flex justify-between  bg-[#C6BDBD30] px-[4%] py-6 border-b-2  border-[#C6BDBD30] ">
     <div class="flex font-semibold poppins text-xl">
         English <img class="w-10 h-10" src="./assets/logo.png">জানালা
@@ -88,32 +93,51 @@
         </section>
 
 <!-- Vocabulary Section   -->
- <section id="vocabulary" class="hidden">
-    <div class="mt-[150px]">
+ 
+    <!-- class="hidden" -->
+
+    <section id="vocabulary"  class="mt-[150px]">
+
+
         <div class="text-center mb-14">
             <h1 class="poppins font-bold text-[36px]">
-                <samp class="text-sky-500 poppins font-bold text-[36px]">Let's</samp> Learn Vocabularies
+                <samp class="text-sky-500 poppins font-bold text-[36px] ">Let's</samp> Learn Vocabularies
             </h1>
-         </div>
+        
     
          <!-- Dynamic button sections  -->
-         <div>
+         
+            <div  id="button-container" class="flex gap-2 justify-center mt-6 ">
+            </div>
+        </div>
+
+        <!-- Button Details -->
+ 
+        <section id="words-container" class="bg-[#C6BDBD20] rounded-xl  p-5 grid grid-cols-3 gap-3">
+
+
+   <!-- no content -->
+        <section class="col-span-full">
+           <div class="  py-[64px] text-center  rounded-3xl">
+               <p class="text-[13px] text-[#79716B] mb-4">আপনি এখনো কোন Lesson Select করেন নি</p>
+               <h1 class="text-[36px] font-medium poppins">একটি Lesson Select করুন।</h1>
+            </div>
+       </section>
+
+    </section>
+
+         
+</section>
     
-    
-         </div>
-    
-         <div class="bg-[#C6BDBD30] py-[64px] text-center  rounded-3xl">
-           <p class="text-[13px] text-[#79716B] mb-4">আপনি এখনো কোন Lesson Select করেন ন</p>
-           <h1 class="text-[36px] font-medium poppins">একটি Lesson Select করুন।</h1>
-         </div>
-     </div>
-    
- </section>
 
 
 
 <!-- Qus Ans Section -->
- <section id="faq" class="hidden">
+
+ <section id="faq" >
+    <!-- class="hidden" -->
+
+
 <div class="mt-[150px]">
     <div class="text-center mb-14">
         <h1 class="poppins font-bold text-[36px]">
@@ -184,14 +208,16 @@
         <img src="./assets/fb-thumb.png">
         <img src="./assets/youtube-thumb.png">
         <img src="./assets/instagram-thumb.png">
+       
     </div>
 </div>
 
     </footer>
 
-    <script src="./script/logout.js"></script>
-<script src="./script/login.js"></script>
+<!-- <script src="./script/logout.js"></script>
+<script src="./script/login.js"></script> -->
 <script src="./script/index.js"></script>
+<script src="./script/buttonDetails.js"></script>
     
 </body>
 </html>
