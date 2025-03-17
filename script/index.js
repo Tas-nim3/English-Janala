@@ -41,7 +41,7 @@ function displayLessonButtons(lessons) {
 
         buttonWrapper.innerHTML = `
          <button id="${lesson.level_no}" onclick="handleLessonClick('${lesson.level_no}')"  
-                    class="btn btn-outline btn-primary">
+                    class="btn btn-outline btn-primary btn-nav">
                 <img src="./assets/fa-book-open.png"> Level-${lesson.level_no}
             </button>
         `;
@@ -49,11 +49,6 @@ function displayLessonButtons(lessons) {
         buttonContainer.append(buttonWrapper);
     }
 }
-
-
-
-
-
 
 
 fetchLessonButtons();

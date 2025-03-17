@@ -37,6 +37,8 @@ document.getElementById('login-btn').addEventListener('click',function(event){
     
        if(pin===123456){
         showAlert()
+        document.getElementById('input-name').value = '';
+        document.getElementById('input-pin').value = '';
 
           document.getElementById("banner").style.display='none';
           

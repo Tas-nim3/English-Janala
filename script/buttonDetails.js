@@ -40,12 +40,13 @@ function displayLessonCards(data) {
 
         card.innerHTML = `
         <div class="bg-white hover:bg-sky-50 rounded-xl p-7 h-full flex flex-col ">
-               <div class="rounded-xl border-[#79716B20] border-1 p-5 h-full">
+               
                 <div class="text-center">
-                    <h1 class="font-bold poppins text-3xl mt-2 mb-5">${vocabulary.word}</h1>
+                    <h1 class="font-bold poppins text-2xl mt-2 mb-5">${vocabulary.word}</h1>
                     <p class="font-medium text-xl hind-siligur mb-2">Meaning /Pronunciation</p>
-                    <h2 class="text-3xl text-slate-500 mb-7 hind-siligur">"${vocabulary.meaning ?vocabulary.meaning : 'অর্থ পাওয়া যায়নি'} / ${vocabulary.pronunciation} "</h2>
+                    <h2 class="text-xl text-slate-500 mb-7 hind-siligur">"${vocabulary.meaning ?vocabulary.meaning : 'অর্থ নেই'} / ${vocabulary.pronunciation} "</h2>
                 </div>
+                <div class="text-end">
                 <div class="flex justify-between  mb-3 mx-3">
                     <div onclick=loadWordDetails(${vocabulary.id}) class="bg-[#1A91FF10] p-2 rounded-sm">
                         <i class="fa-solid fa-circle-info"></i>
@@ -54,7 +55,8 @@ function displayLessonCards(data) {
                         <i class="fa-solid fa-volume-high"></i>
                     </div>
                 </div>
-               </div>
+                </div>
+               
             </div>
         `;
 
@@ -66,7 +68,7 @@ function displayLessonCards(data) {
 
 function pronounceWord(word) {
     const utterance = new SpeechSynthesisUtterance(word);
-    utterance.lang = 'en-US'; // Adjust the language if needed
+    utterance.lang = 'en-US'; 
     window.speechSynthesis.speak(utterance);
   }
 
@@ -86,7 +88,7 @@ const detailsContainer = document.getElementById("details-container");
 
   detailsContainer.innerHTML=`
    <div class="rounded-xl border-[#D7E4EF] border-1 p-5 ">
-        <h1 class="mb-7 font-semibold text-4xl poppins">
+        <h1 class="mb-7 font-semibold text-2xl poppins">
             ${card.word} (<i class="fa-solid fa-microphone-lines"></i> : ${card.pronunciation})
         </h1>
         <p class="font-medium poppins text-2xl mb-1">Meaning</p>
