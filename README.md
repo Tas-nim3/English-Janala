@@ -1,15 +1,8 @@
-### WELCOME TO ASSIGNMENT-006
+### WELCOME TO English janala
 # ENGLISH <img width="25px" src="./assets/logo.png" /> JANALA
 
-## Private Repo Link : https://classroom.github.com/a/JPUEMrmw
+#PIN =  123456
 
- **📅 Deadline For 60 marks**: 17th March , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 50 marks**: 19th March , 2025 ( 11:59 pm ⏱️)
-
-**📅 Deadline For 30 marks**: Any time after  19th March , 2025
-
----
 ⚡ API Endpoints
 ---
 1. Get ⚡ All Levels
